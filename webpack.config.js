@@ -9,7 +9,7 @@ module.exports = {
     },
     devtool: "inline-source-map",
     devServer: {
-        contentBase: './dist',
+        contentBase: path.join(__dirname, 'dist'),
         hot: true
     },
     plugins: [
@@ -19,10 +19,6 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
-    output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
-    },
     module: {
         rules: [
             {
@@ -42,9 +38,13 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: 'babel-loader'
                 }
             }
         ]
+    },
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist')
     }
 };
