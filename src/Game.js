@@ -31,7 +31,7 @@ export default class Game {
 
     loop(time) {
         let loop = this.loop.bind(this);
-        if (window.times++ < 20) {
+        if (window.times++ < 1) {
             requestAnimationFrame(loop);
             return;
         }

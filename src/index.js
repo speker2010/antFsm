@@ -6,8 +6,8 @@ window.curTime = performance.now();
 window.times = 0;
 let game = new Game();
 let home = new Home({
-    x: 300,
-    y: 300,
+    x: 5,
+    y: 5,
     width: 10,
     height: 10
 });

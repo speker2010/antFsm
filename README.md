@@ -1,13 +1,17 @@
 # antFsm
 ## require
-node.js webpack
+node.js webpack wepack-dev-server
 
 ## install
-if webpack does not install
-npm i -g webpack
-
+if webpack and webpack-dev-server does not install
+```
+npm i -g webpack webpack-dev-server
+```
 install dependencies
+```
 npm i
-
+```
 ## run 
+```
 npm run dev
+```
