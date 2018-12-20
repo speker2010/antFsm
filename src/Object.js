@@ -1,3 +1,6 @@
+/**
+ * It's can be trate but it's js ¯\_(ツ)_/¯
+ */
 export default class Object {
     constructor() {
 

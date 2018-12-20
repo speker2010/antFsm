@@ -1,8 +1,8 @@
-import FSM from './FSM';
+import FinalStateMachine from './FinalStateMachine';
 import Vector from "./Vector";
 import VectorHelper from "./VectorHelper";
 
-export default class AntFSM extends FSM {
+export default class AntFinalStateMachine extends FinalStateMachine {
     constructor(params) {
         super(params);
         this.color = params.color || '#00ff00';

@@ -1,4 +1,6 @@
 # antFsm
+Project implements final state machine for simple AI
+
 ## require
 node.js webpack wepack-dev-server
 

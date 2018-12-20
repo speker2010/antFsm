@@ -1,6 +1,6 @@
 import Object from "./Object";
 
-export default class FSM extends Object{
+export default class FinalStateMachine extends Object{
     constructor(params) {
         super(params);
         this.stack = [];
